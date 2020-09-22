@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+	<!-- 主页页面 需要跳转-->
+	<activity activityName="com.pho.hudan.MainActivity" activityDesc="主页页面">
+		<locator by="id" value="com.pho.hudan:id/navigation_my" desc="我的柠檬"></locator>
+		<locator by="id" value="com.pho.hudan:id/fragment_my_dss_avatar_layout" desc="头像登录"></locator>
+	</activity>
+	
+	<!-- 登录页面 -->
+	<activity activityName="com.pho.hudan.LoginActActivity" activityDesc="登录页面">
+		<locator by="id" value="com.pho.hudan:id/et_mobile" desc="手机号码输入框"></locator>
+		<locator by="id" value="com.pho.hudan:id/et_password" desc="密码输入框"></locator>
+		<locator by="id" value="com.pho.hudan:id/btn_login" desc="登录按钮"></locator>
+	</activity>
+</pages>

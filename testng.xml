@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="APP后台管理系统" parallel="tests" thread-count="2">
+	<!-- <test name="LoginTest"> <classes> <class name="com.pho.tester.LoginTest"> 
+		<!-- <methods> <include name="test"></include> </methods> </class> </classes> 
+		</test> -->
+	<!-- 多线程 一个手机 -->
+	<test name="ZX1G225X2G_LoginTest">
+		<parameter name="udid" value="ZX1G225X2G_LoginTest"></parameter>
+		<parameter name="appium_port" value="4723"></parameter> 
+		<classes>
+			<class name="com.pho.tester.LoginTest">
+			</class>
+		</classes>
+	</test>
+	<!-- 一个模拟器 -->
+	<test name="192.168.188.101:5555_LoginTest">
+		<parameter name="udid" value="192.168.188.101:5555"></parameter>
+		<parameter name="appium_port" value="4725"></parameter>
+		<classes>
+			<class name="com.pho.tester.LoginTest">
+			</class>
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		<listener class-name="com.pho.hudan.listener.TestListener"></listener>
+		<listener class-name="com.pho.hudan.listener.RetryListener"></listener>
+
+	</listeners>
+</suite>

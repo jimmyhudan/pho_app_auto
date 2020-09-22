@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<platformName value="Android"></platformName>
+	<appPackage value="com.pho.hudan"></appPackage>
+	<appActivity value=".WelcomeActivity"></appActivity>
+	
+	<classes>
+		<class name="com.pho.tester.LoginTest"></class>
+	</classes>
+
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [后台管理系统]">
+  <test name="LoginTest(failed)">
+    <classes>
+      <class name="com.pho.tester.LoginTest">
+        <methods>
+          <include name="test01"/>
+        </methods>
+      </class> <!-- com.pho.tester.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [后台管理系统] -->
